@@ -40,3 +40,15 @@ background-size: cover;
 background-attachment: fixed;
 
 }
+
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+display: block;
+height: auto;
+max-width: 500px;
+max-height: 700px;
+line-height: 1;
+width: 100%; 
+padding: 20px;
+text-align: center;
+}
