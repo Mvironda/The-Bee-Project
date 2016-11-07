@@ -41,6 +41,7 @@ background-attachment: fixed;
 
 }
 
+<<<<<<< Updated upstream
 .carousel-inner>.item>img, .carousel-inner>.item>a>img {
 display: block;
 height: auto;
@@ -50,4 +51,9 @@ line-height: 1;
 width: 100%; 
 padding: 20px;
 text-align: center;
+=======
+.carousel-item {
+	width:900px;
+	height:500px;
+>>>>>>> Stashed changes
 }
