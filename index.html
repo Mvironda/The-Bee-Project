@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-<<<<<<< Updated upstream
   <!-- Required meta tags-->
   <meta charset="utf-8">
-=======
-
-  <link href='bootstrap-3.3.7-dist/css/bootstrap.css' rel='stylesheet'>
-  <script src = 'bootstrap-3.3.7-dist/js/bootstrap.js'></script>
-  <link href="main.css" rel="stylesheet">
->>>>>>> Stashed changes
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <link href='bootstrap-3.3.7-dist/css/bootstrap.css' rel='stylesheet'>
+  <link href="main.css" rel="stylesheet">
+  <link href='startbootsrap-scrolling-nav-gh-pages/css/scrolling-nav.css' rel='stylesheet'>
+  <script src = 'bootstrap-3.3.7-dist/js/bootstrap.js'></script>
+  <script src='startbootsrap-scrolling-nav-gh-pages/js/scrolling-nav.js'></script>
+
+  
   <!--CSS-->
   <!--<link href='bootstrap-3.3.7-dist/css/bootstrap.css' rel='stylesheet'>-->
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -25,14 +26,21 @@
 <!--NavBar-->
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">The Bee Project</a>
+    <div class="navbar-header page scroll">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+      <a class="navbar-brand page-scroll" href="#page-top">The Bee Project</a>
     </div>
+    </div>
+    <div class="collapse navbar-collapse navbar-ex1-collapse"
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">About</a></li> 
-      <li><a href="#">Join us!</a></li>
-      <li><a href="#">Contact</a></li>  
+      <li class="hidden active"><a class="page-scroll" href="#page-top">Home</a></li>
+      <li><a class="page-scroll" href="#about">About</a></li> 
+      <li><a class="page-scroll" href="#join us!">Join us!</a></li>
+      <li><a class="page-scroll" href="#contact">Contact</a></li> 
     </ul>
   </div>
 </nav>
@@ -80,21 +88,49 @@
 
 <div>
 
+<section id="about" class="about-us">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+
 <h1>About us</h1>
+
+</div>
+</div>
+</div>
+</section>
 
 <p>We want to raise awareness about the importance of bees and the creation of honey in cities. Using a model similar to that already implemented in New York, we strive to set up Bee Hives on London rooftops throughout the city!
 </p>
 
-<h1>Join us!</h1>
+<section id="join us!" class="join-us">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
 
+<h1>Join us!</h1>
     <form role='form'>
       <label for="email">Find out more</label>
       <input type="text" name="email" >
       <button class="btn btn-success">Send</button>
     </form>
-  </div>
 
-  <h1>Contact</h1>
+</div>
+</div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+
+<h1>Contact</h1>
+
+</div>
+</div>
+</div>
+</section>
 
  <!-- <script> 
 jQuery('.carousel').carousel({interval: 3000 });
@@ -128,8 +164,6 @@ normalizeHeights(); //run it again
 }
 carouselNormalization();
 </script> -->
-
-</div> 
 <!--end of carousel-->
 
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
