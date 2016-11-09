@@ -1,4 +1,10 @@
 
+body {
+	background-color: #ffff99;
+	padding-top: 40px
+}
+
+
 #social-buttons button {
 
 color: white;
@@ -86,14 +92,16 @@ a.nav-active {
     color:#ccc;
 }
 
+.navbar.transparent.navbar-inverse .navbar-inner {
+   background: rgba(0,0,0,0.4);
+}
+
 .carousel-inner>.item>img, .carousel-inner>.item>a>img {
 display: block;
-height: auto;
-max-width: 800px;
-max-height: 800px;
+max-height: 600px;
 line-height: 1;
-width: 100%; 
-padding: 20px;
+width: auto; 
+
 text-align: center;
 .carousel-item {
 	width:900px;
